@@ -6,8 +6,14 @@ router.get('/getUser', function(req, res, next) {
   res.send('Getting the user');
 });
 
-router.get('/createUser', function(req, res, next) {
+router.post('/createUser', function(req, res, next) {
   res.send('Creating the user');
+});
+router.put('/updateUser', function(req, res, next) {
+  res.send('Updatinh the user');
+});
+router.delete('/deleteUser', function(req, res, next) {
+  res.send('deleting the user');
 });
 
 module.exports = router;
