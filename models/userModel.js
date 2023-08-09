@@ -4,4 +4,9 @@ module.exports = {
         return "created user Model";
     },
 
+    getUser : function (){
+        return "Get user Model";
+    },
+
+
 };
