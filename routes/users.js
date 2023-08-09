@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/getUser', function(req, res, next) {
-  res.send('Getting the user');
+
+  const gettingQuery = req.query();
+  res.send(gettingQuery);
 });
 
 router.post('/createUser', function(req, res, next) {
