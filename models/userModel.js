@@ -1,11 +1,14 @@
 module.exports = {
 
     createUser : function (){
-        return "created user Model";
+        try {
+        return "created user Model";} catch (error)
+        { return error;}
     },
 
     getUser : function (){
-        return "Get user Model";
+        try {
+        return "Get user Model";} catch (error){return error;}
     },
 
 
