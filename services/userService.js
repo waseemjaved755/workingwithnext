@@ -4,10 +4,10 @@ const bcrypt = require('bcrypt');
 
 module.exports = {
 
-   createUser : function ()
+   createUser : async function ()
    {
       const saltRounds = 10;
-      const hash = bcrypt.hashSync(body.password, saltRounds);
+      const hash = await bcrypt.hash(body.password, saltRounds);
 
          // Store hash in your password DB.
       const response = userModel.createUser();
