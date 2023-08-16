@@ -1,5 +1,7 @@
 const userService = require("../services/userService");
 const Joi = require('joi');
+const bcrypt = require('bcrypt');
+
 
 
 const createUserSchema = Joi.object(
