@@ -33,4 +33,16 @@ module.exports = {
         }
     },
 
+    updateUser : async (body) => {
+       
+        try {
+             return await models.update({...body},{where : {
+              id : body.id,},
+            })
+        }
+        catch(error){
+
+        }
+    },
+
 };

@@ -12,7 +12,6 @@ const createUserSchema = Joi.object(
   }
 );
 
-
 module.exports = {
 createUser : async function(req , res)
 {

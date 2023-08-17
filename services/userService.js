@@ -43,5 +43,20 @@ module.exports = {
         return error;
       }
     },
+
+    updateUser : async (body) => {
+      try {
+          const user = await userModel.getUserById(id);
+          if(!user){return "no such user exists"};
+
+          const response = await userModel.updateUser(body);
+          if(response){return response;}
+
+          return "unable to update";
+      }
+      catch(error) {
+        return error;
+      }
+    },
    
 };
